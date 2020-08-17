@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://rhythm/bg.png" type="Texture" id=1]
+[ext_resource path="res://rhythm/Rhythm.gd" type="Script" id=2]
+[ext_resource path="res://rhythm/frames.tres" type="SpriteFrames" id=3]
+
+[node name="Rhythm" type="Sprite"]
+position = Vector2( -40, 28 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 40, -28 )
+script = ExtResource( 2 )
+
+[node name="Template" type="AnimatedSprite" parent="."]
+visible = false
+position = Vector2( 58, 86 )
+frames = ExtResource( 3 )
+animation = "01"
+centered = false
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="Occluder" type="Polygon2D" parent="."]
+position = Vector2( -0.888878, -63.1819 )
+scale = Vector2( 0.268518, 0.333705 )
+z_index = 4
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 48, 108, 156, 108, 156, 489, 48, 489 )

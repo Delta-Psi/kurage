@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/kurage.ogg-d2624d1630054a34fb26d8c4795438f2.oggstr"
+
+[deps]
+
+source_file="res://kurage.ogg"
+dest_files=[ "res://.import/kurage.ogg-d2624d1630054a34fb26d8c4795438f2.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

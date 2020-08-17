@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://metronome/frames.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://metronome/Metronome.gd" type="Script" id=2]
+
+[node name="Metronome" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Number" type="AnimatedSprite" parent="."]
+position = Vector2( 0, 2 )
+frames = ExtResource( 1 )
+animation = "number"
+centered = false
+
+[node name="Lines" type="AnimatedSprite" parent="."]
+position = Vector2( 6, 0 )
+frames = ExtResource( 1 )
+animation = "lines"
+frame = 7
+centered = false
