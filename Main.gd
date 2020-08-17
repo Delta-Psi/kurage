@@ -2,19 +2,21 @@ extends Node2D
 
 onready var global = get_node('/root/Global')
 
-#var song_begin
-#var song_delay
-
-func _ready():
-	pass
-
 var pattern_position = 0
 var next_pattern_beat = 0.0
 var previous_time = 0.0
 
+# workaround so we can properly reset the audio
+var stream = preload("res://kurage.ogg")
+var song_player = AudioStreamPlayer.new()
+
+func _ready():
+	song_player.stream = stream
+	self.add_child(song_player)
+
 func _process(_delta):
-	if $SongPlayer.playing:
-		var time = $SongPlayer.get_playback_position() + AudioServer.get_time_to_next_mix() - AudioServer.get_output_latency()
+	if song_player.playing:
+		var time = song_player.get_playback_position() + AudioServer.get_time_to_next_mix() - AudioServer.get_output_latency()
 		if time > previous_time:
 			previous_time = time
 			
@@ -31,17 +33,21 @@ func _process(_delta):
 
 
 func _on_Play_pressed():
-	if $SongPlayer.playing:
-		$SongPlayer.stream_paused = false
-	else:
-		$SongPlayer.play()
+	if not song_player.playing:
+		song_player.play()
+	song_player.stream_paused = false
 
 func _on_Pause_pressed():
-	$SongPlayer.stream_paused = true
+	song_player.stream_paused = true
 
 func _on_Reset_pressed():
-	$SongPlayer.stop()
-	#$Metronome.reset()
+	song_player.stop()
+	song_player.queue_free()
+	song_player = AudioStreamPlayer.new()
+	song_player.stream = stream
+	self.add_child(song_player)
+	
+	$Metronome.reset()
 	$Rhythm.reset()
 	pattern_position = 0
 	next_pattern_beat = 0.0

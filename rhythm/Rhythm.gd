@@ -14,7 +14,7 @@ func _ready():
 func push_block(id, diff):
 	if current_beat >= 4.0:
 		for block in to_remove:
-			self.remove_child(block)
+			block.queue_free()
 		for block in left_blocks:
 			$Tween.interpolate_property(
 				block, "position:x",
@@ -47,11 +47,11 @@ func push_block(id, diff):
 func reset():
 	current_beat = 0.0
 	for block in to_remove:
-		self.remove_child(block)
+		block.queue_free()
 	for block in left_blocks:
-		self.remove_child(block)
+		block.queue_free()
 	for block in right_blocks:
-		self.remove_child(block)
+		block.queue_free()
 	to_remove = []
 	left_blocks = []
 	right_blocks = []
