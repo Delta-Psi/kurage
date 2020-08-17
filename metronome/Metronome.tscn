@@ -16,5 +16,4 @@ centered = false
 position = Vector2( 6, 0 )
 frames = ExtResource( 1 )
 animation = "lines"
-frame = 7
 centered = false

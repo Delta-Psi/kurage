@@ -43,3 +43,15 @@ func push_block(id, diff):
 		right_blocks.append(node)
 	
 	current_beat += diff
+
+func reset():
+	current_beat = 0.0
+	for block in to_remove:
+		self.remove_child(block)
+	for block in left_blocks:
+		self.remove_child(block)
+	for block in right_blocks:
+		self.remove_child(block)
+	to_remove = []
+	left_blocks = []
+	right_blocks = []

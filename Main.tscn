@@ -25,3 +25,37 @@ polygon = PoolVector2Array( 48, 108, 156, 108, 156, 489, 51.6, 489 )
 [node name="Metronome" parent="." instance=ExtResource( 4 )]
 position = Vector2( 396.062, 322.063 )
 scale = Vector2( 3, 3 )
+
+[node name="UI" type="GridContainer" parent="."]
+margin_left = 872.19
+margin_top = 13.3635
+margin_right = 1013.19
+margin_bottom = 53.3635
+columns = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Play" type="Button" parent="UI"]
+margin_right = 38.0
+margin_bottom = 20.0
+text = "play"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pause" type="Button" parent="UI"]
+margin_left = 42.0
+margin_right = 92.0
+margin_bottom = 20.0
+text = "pause"
+
+[node name="Reset" type="Button" parent="UI"]
+visible = false
+margin_left = 96.0
+margin_right = 141.0
+margin_bottom = 20.0
+text = "reset"
+[connection signal="pressed" from="UI/Play" to="." method="_on_Play_pressed"]
+[connection signal="pressed" from="UI/Pause" to="." method="_on_Pause_pressed"]
+[connection signal="pressed" from="UI/Reset" to="." method="_on_Reset_pressed"]
