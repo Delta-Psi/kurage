@@ -1,0 +1,106 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Lyrics.gd" type="Script" id=1]
+[ext_resource path="res://misaki/misaki.tres" type="DynamicFont" id=2]
+
+[node name="Lyrics" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Label1" type="Label" parent="."]
+margin_left = 65.0
+margin_top = 7.0
+margin_right = 75.0
+margin_bottom = 127.0
+custom_fonts/font = ExtResource( 2 )
+text = "空を見ていると "
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 57.0
+margin_right = 67.0
+margin_bottom = 120.0
+custom_fonts/font = ExtResource( 2 )
+text = "空を見ていると "
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 48.0
+margin_right = 58.0
+margin_bottom = 120.0
+custom_fonts/font = ExtResource( 2 )
+text = "るるるるる"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label4" type="Label" parent="."]
+margin_left = 40.0
+margin_right = 50.0
+margin_bottom = 120.0
+custom_fonts/font = ExtResource( 2 )
+text = "るるるるる"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label5" type="Label" parent="."]
+margin_left = 32.0
+margin_right = 42.0
+margin_bottom = 120.0
+custom_fonts/font = ExtResource( 2 )
+text = "るるるるる"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label6" type="Label" parent="."]
+margin_left = 24.0
+margin_right = 34.0
+margin_bottom = 120.0
+custom_fonts/font = ExtResource( 2 )
+text = "るるるるる"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label7" type="Label" parent="."]
+margin_left = 16.0
+margin_right = 26.0
+margin_bottom = 120.0
+custom_fonts/font = ExtResource( 2 )
+text = "るるるるる"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label8" type="Label" parent="."]
+margin_left = 8.0
+margin_right = 18.0
+margin_bottom = 120.0
+custom_fonts/font = ExtResource( 2 )
+text = "空を見ていると "
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label9" type="Label" parent="."]
+margin_right = 10.0
+margin_bottom = 120.0
+custom_fonts/font = ExtResource( 2 )
+text = "空を見ていると "
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

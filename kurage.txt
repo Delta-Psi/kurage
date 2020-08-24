@@ -1,0 +1,147 @@
+bpm 135.0
+
+box 00; 0.5
+box 01; 0.5
+box 02; 0.5
+box 01; 0.5
+box 00; 0.5
+box 01; 0.5
+box 02; 0.5
+box 01; 0.5
+
+box 00; 0.5
+box 01; 0.5
+box 02; 0.5
+box 01; 0.5
+box 00; 0.5
+box 01; 0.5
+box 02; 0.5
+box 01; 0.5
+
+box 00; 0.5
+box 01; 0.5
+box 02; 0.5
+box 01; 0.5
+box 00; 0.5
+box 01; 0.5
+box 02; 0.5
+box 01; 0.5
+
+
+box 00; 0.5
+box 01; 0.5
+box 02; 0.5
+box 01; 0.5
+box 00; 0.5
+box 01; 0.5
+box 02; 0.5
+box 01; 0.5
+
+# bigger drumbs
+box 03; 0.5
+box 01; 0.5
+box 04; 0.5
+box 01; 0.5
+box 03; 0.5
+box 01; 0.5
+box 04; 0.5
+box 01; 0.5
+
+box 03; 0.5
+box 01; 0.5
+box 04; 0.5
+box 01; 0.5
+box 03; 0.5
+box 01; 0.5
+box 04; 0.5
+box 01; 0.5
+
+box 03; 1.0
+box 04; 1.0
+box 03; 1.0
+box 04; 1.0
+
+box 03; 1.0
+box 04; 0.5
+box 05; 0.5
+box 06; 0.5
+box 07; 0.5
+box 08; 0.5
+box 09; 0.5
+
+# lyrics begin
+lyrics 空を見ていると
+box 03; 0.5
+box 01; 0.5
+box 04; 0.5
+box 01; 0.5
+box 03; 0.5
+box 01; 0.5
+box 02; 0.5
+box 04; 0.5
+
+box 03; 0.5
+box 01; 0.5
+box 04; 0.5
+box 01; 0.5
+box 03; 0.5
+box 01; 0.5
+lyrics 宙に浮く何かを見つけた
+box 02; 0.5
+box 04; 0.5
+
+box 03; 0.5
+box 01; 0.5
+box 04; 0.5
+box 01; 0.5
+box 03; 0.5
+box 01; 0.5
+box 02; 0.5
+box 04; 0.5
+
+box 03; 0.5
+box 01; 0.5
+box 04; 0.5
+box 01; 0.5
+box 03; 0.5
+box 01; 0.5
+lyrics よく見てみるとそれは
+box 02; 0.5
+box 04; 0.5
+
+box 03; 0.5
+box 01; 0.5
+box 04; 0.5
+box 01; 0.5
+box 03; 0.5
+box 01; 0.5
+box 02; 0.5
+box 04; 0.5
+
+box 03; 0.5
+box 01; 0.5
+box 04; 0.5
+box 01; 0.5
+box 03; 0.5
+box 01; 0.5
+lyrics 巨大なクラゲだった
+box 02; 0.5
+box 04; 0.5
+
+box 03; 0.5
+box 01; 0.5
+box 04; 0.5
+box 01; 0.5
+box 03; 0.5
+box 01; 0.5
+box 02; 0.5
+box 04; 0.5
+
+box 04; 0.75
+box 04; 0.75
+lyrics
+box 04; 0.5
+box 04; 0.5
+box 01; 0.5
+box 04; 0.5
+box 01; 0.5

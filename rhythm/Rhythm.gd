@@ -1,7 +1,6 @@
 extends Sprite
 
-onready var global = get_node('/root/Global')
-onready var shift_duration = 0.125*global.BPM/60.0
+var bpm = 0.0
 
 var current_beat = 0.0
 var right_blocks = []
@@ -11,7 +10,12 @@ var to_remove = []
 func _ready():
 	pass
 
+func set_bpm(v):
+	bpm = v
+
 func push_block(id, diff):
+	var shift_duration = 0.125*bpm/60.0
+	
 	if current_beat >= 4.0:
 		for block in to_remove:
 			block.queue_free()

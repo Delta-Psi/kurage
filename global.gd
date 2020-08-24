@@ -1,3 +1,6 @@
+# NOW DEPRECATED
+# only here for reference
+
 extends Node
 
 var BPM = 135.0
